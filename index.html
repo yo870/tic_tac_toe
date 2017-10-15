@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>FCC Tic Tac Toe</title>
+
+    <!-- Links -->
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+	<section>
+		<div>
+			<h2>Game Settings</h2>
+			<h3>Number of Players</h3>
+			<div class="buttonwrap">
+				<button id="n1player" class="smallbutton selected" type="button">1 Player</button>
+				<button id="n2players" class="smallbutton" type="button">2 Players</button>
+			</div>
+			<h3>Player 1 Group (X Starts)</h3>
+			<div class="buttonwrap">
+				<button id="xselect" class="smallbutton selected" type="button">X</button>
+				<button id="oselect" class="smallbutton" type="button">O</button>
+			</div>
+			<h3>AI Level</h3>
+			<div class="buttonwrap">
+				<button id="drunk" class="smallbutton" type="button">Drunk</button>
+				<button id="normal" class="smallbutton selected" type="button">Normal</button>
+			</div>
+			<button id="configbutton" class="bigbutton" type="button">Start!</button>
+		</div>
+
+	</section>
+
+	<h1 id="announce">Player 1 starts!</h1>
+
+	<h1>FCC Tic Tac Toe</h1>
+
+	<section class="container">
+		<aside>
+			<p id="player1disp" class="score">Player 1</p>
+			<p id="p1score">0</p>
+		</aside>
+		
+		<main class="table">
+			
+			<div class="row">
+				<p value="1">X</p>
+				<p value=2>O</p>
+				<p value="3">X</p>
+			</div>
+
+			<div class="row">
+				<p value="4">O</p>
+				<p value="5">X</p>
+				<p value="6">O</p>
+			</div>
+
+			<div class="row">
+				<p value="7">X</p>
+				<p value="8">O</p>
+				<p value="9">X</p>
+			</div>
+
+		</main>
+
+		<aside>
+			<p id="player2disp" class="score">Player 2</p>
+			<p id="p2score">0</p>
+		</aside>
+	
+	</section>
+	
+	<button id="mainbutton" class="bigbutton" type="button">Play!</button>
+
+	<footer>
+	        <p>Developed by Yo - Minimax algorithm designed by <a target="_blank" href="https://github.com/ahmadabdolsaheb/minimaxarticle">Ahmad Abdolsaheb</a></p>
+	</footer>
+	
+
+</body>
+
+    <script type="text/javascript" src="script.js"></script>
+</html>
+
+
